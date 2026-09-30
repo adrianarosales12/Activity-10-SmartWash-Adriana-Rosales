@@ -23,9 +23,9 @@ randomness anywhere in the app), so your results should match your classmates' e
 
 ---
 
-### Your Tasks
-
 1. **Read the Fuzzy Controller tab.** Look at the membership function charts and note that a value near the middle of the range belongs to *two* terms at once.
+<img width="307" height="332" alt="image" src="https://github.com/user-attachments/assets/e4afab6e-f5f7-4939-8107-1e04e4add7af" /> <img width="313" height="338" alt="image" src="https://github.com/user-attachments/assets/6a8ac446-5028-419f-9d36-3cb3504d8411" />
+
 
 
 2. **Run all five profiles (P1 through P5) in the Test the Controller tab.** Take a screenshot of the full breakdown for each one.
