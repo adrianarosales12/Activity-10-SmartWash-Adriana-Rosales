@@ -43,7 +43,24 @@ randomness anywhere in the app), so your results should match your classmates' e
 - PROFILE 5
 <img width="555" height="538" alt="image" src="https://github.com/user-attachments/assets/578aff3a-458f-4f19-ac23-d7abd84ae038" />
 
-3. **Compare P4 and P5.** Take a screenshot showing both of their final wash times side by side.
+3. **Compare P4 and P5.**
+
+- COMPARISONS
+
+For profile P4 (small load, heavy soiling), a 2 kg load and a high soiling level (8) were used. During fuzzification, membership degrees were Small = 0.6 and Medium = 0.4 for load size, while Heavy = 0.6 and Moderate = 0.4 for soiling level.
+
+This activated four rules with varying intensities, generating values ​​for Short, Medium, and Long; the Medium term was the strongest at 0.6, resulting in a final wash time of 45 minutes. Conversely, profile P5 (large load, light soiling) involved an 8 kg load and a low soiling level (2). Here, membership degrees were Large = 0.6 and Medium = 0.4 for load size, and Light = 0.6 and Moderate = 0.4 for soiling level. 
+
+Four rules were also activated, producing values ​​for Short, Medium, and Long, with Medium dominating at a strength of 0.6, likewise resulting in a final time of 45 minutes. Although the profiles represent opposite scenarios—one with a small, heavily soiled load and the other with a large, lightly soiled load—the fuzzy system smooths out these differences and arrives at the same result, demonstrating how fuzzy logic seeks a reasonable balance rather than rigid answers.
+
+
+- PROFILE 4
+<img width="550" height="536" alt="image" src="https://github.com/user-attachments/assets/b3208858-1358-4f93-b18e-6be8f3a8d418" />
+
+- PROFILE 5
+<img width="555" height="538" alt="image" src="https://github.com/user-attachments/assets/578aff3a-458f-4f19-ac23-d7abd84ae038" />
+
+
 
 ---
 # Activity 10 — Reflection Questions: SmartWash Fuzzy Controller
