@@ -1,0 +1,63 @@
+# Activity 10 — Reflection Questions: SmartWash Fuzzy Controller
+
+**1. List the **four steps** of the fuzzy reasoning pipeline, in order, and briefly describe what each one does.**
+
+- The fuzzy reasoning pipeline consists of four sequential steps:
+   - Fuzzification: This step translates crisp numerical inputs (such as load size in kilograms or dirtiness on a scale) into degrees of membership across linguistic categories like Small,
+   - Medium, or Large. It acknowledges that a single input can partially belong to multiple categories at once.
+   - Inference: Here, the system applies the rule base. Each rule combines the fuzzified inputs (e.g., “IF Load is Small AND Dirt is Heavy THEN Wash Time is Medium”) and calculates the strength with which it fires.
+   - Aggregation: Since multiple rules may fire simultaneously, this step combines their outputs. For each possible wash time category (Short, Medium, Long), the system keeps the strongest degree of activation.
+   - Defuzzification: Finally, the fuzzy outputs are converted back into a single crisp value. In this app, the wash time is expressed in minutes, giving the user a precise recommendation.
+
+
+**2. For **P1** (small load, light dirt), report the Load and Dirt membership degrees for every term, and the final wash time.**
+
+- For Profile 1, the load size is small and the dirtiness is light. The membership degrees are:
+   - Load size: Small = 0.6, Medium = 0.4, Large = 0.0
+   - Dirtiness: Light = 0.6, Moderate = 0.4, Heavy = 0.0
+- After inference and aggregation, the final wash time is 30 minutes, reflecting that a small, lightly soiled load requires only a short cycle.
+
+
+**3. For **P2** (right in the middle), which single rule fires, at what strength, and what is the final wash time?**
+
+- Profile 2 is positioned exactly in the middle of both ranges. In this case, only one rule fires fully:
+   - Rule fired: IF Load=Medium AND Dirt=Moderate → THEN Wash Time=Medium
+   - Strength: 1.0 (maximum activation)
+- Final wash time: 45 minutes, which makes sense as the balanced middle case.
+
+
+**4. For **P3** (large load, heavy dirt), list every rule that fires (strength greater than 0) and report the final wash time.**
+
+- For Profile 3, the load is large and heavily soiled. Several rules fire:
+IF Load=Large AND Dirt=Moderate → Long
+IF Load=Large AND Dirt=Heavy → Long
+IF Load=Medium AND Dirt=Moderate → Medium
+IF Load=Medium AND Dirt=Heavy → Long The aggregation favors the Long category, and the defuzzification produces a 60‑minute wash time, the maximum in the system, which aligns with the intuition that a large, dirty load needs the longest cycle.
+
+
+
+**5. **P4** and **P5** land on the exact same wash time. Report both profiles' aggregated Short/Medium/Long output strengths and confirm they match.**
+
+- Both profiles produce identical aggregated strengths:
+   - Short = 0.4
+   - Medium = 0.6
+   - Long = 0.4 This confirms that despite their differences, the fuzzy controller treats them equivalently.
+
+
+**6. In your own words, explain **why** P4 (small load, heavy dirt) and P5 (large load, light dirt) end up at the same wash time. What does this tell you about how load size and dirtiness "trade off" against each other in this controller?**
+
+- P4 represents a small load with heavy dirt, while P5 represents a large load with light dirt. Intuitively, these are opposite extremes, yet the fuzzy controller assigns them the same wash time of 45 minutes. This demonstrates the trade‑off built into the system: high dirtiness increases the wash time, while a small load decreases it, and vice versa. When combined, the effects balance out, showing how fuzzy logic captures nuanced interactions rather than rigid rules.
+
+**7. The defuzzification method used in this app is one of three named in the course material. Name it, and state the three reference values (in minutes) it uses for Short, Medium, and Long.**
+
+- The app uses the Centroid (Center of Gravity) method for defuzzification. It calculates the weighted average of the activated output terms. The three reference values are:
+   - Short = 30 minutes
+   - Medium = 45 minutes
+   - Long = 60 minutes These anchor points allow the system to interpolate smoothly between categories.
+
+
+**8. Name one **real-world device or system** (other than a washing machine) where fuzzy logic would be a natural fit. Briefly describe what its inputs and output would be.**
+
+- A natural example outside washing machines is a smart thermostat.
+   - Inputs: Current room temperature, rate of temperature change, and user comfort preference.
+   - Output: Heating or cooling intensity. Instead of switching abruptly between “on” and “off,” fuzzy logic allows the thermostat to adjust gradually, maintaining comfort more efficiently and avoiding unnecessary energy spikes.
