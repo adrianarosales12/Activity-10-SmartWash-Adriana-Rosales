@@ -26,10 +26,22 @@ randomness anywhere in the app), so your results should match your classmates' e
 1. **Read the Fuzzy Controller tab.** Look at the membership function charts and note that a value near the middle of the range belongs to *two* terms at once.
 <img width="307" height="332" alt="image" src="https://github.com/user-attachments/assets/e4afab6e-f5f7-4939-8107-1e04e4add7af" /> <img width="313" height="338" alt="image" src="https://github.com/user-attachments/assets/6a8ac446-5028-419f-9d36-3cb3504d8411" />
 
-
-
 2. **Run all five profiles (P1 through P5) in the Test the Controller tab.** Take a screenshot of the full breakdown for each one.
 
+- PROFILE 1
+<img width="548" height="542" alt="image" src="https://github.com/user-attachments/assets/59df02fa-dd2e-4c34-8d01-fe63bd5e967b" />
+
+- PROFILE 2
+<img width="551" height="491" alt="image" src="https://github.com/user-attachments/assets/a38e0b1e-4330-4b72-b948-7d250441bb85" />
+
+- PROFILE 3
+<img width="550" height="542" alt="image" src="https://github.com/user-attachments/assets/b1a7d896-0ae8-4e08-97df-8b3809113c2c" />
+
+- PROFILE 4
+<img width="550" height="536" alt="image" src="https://github.com/user-attachments/assets/b3208858-1358-4f93-b18e-6be8f3a8d418" />
+
+- PROFILE 5
+<img width="555" height="538" alt="image" src="https://github.com/user-attachments/assets/578aff3a-458f-4f19-ac23-d7abd84ae038" />
 
 3. **Compare P4 and P5.** Take a screenshot showing both of their final wash times side by side.
 
