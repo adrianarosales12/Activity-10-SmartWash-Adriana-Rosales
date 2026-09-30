@@ -25,15 +25,11 @@ randomness anywhere in the app), so your results should match your classmates' e
 
 ### Your Tasks
 
-1. **Read the Fuzzy Controller tab.** Look at the membership function charts and note that a
-   value near the middle of the range belongs to *two* terms at once.
-   💡 *Hint:* Try to find the load value where "Small" and "Medium" are exactly equal (look at
-   where the two lines cross on the chart).
+1. **Read the Fuzzy Controller tab.** Look at the membership function charts and note that a value near the middle of the range belongs to *two* terms at once.
 
-2. **Run all five profiles (P1 through P5) in the Test the Controller tab.** Take a screenshot
-   of the full breakdown for each one.
-   💡 *Hint:* For P2, only one single rule fires at full strength (1.0) — that's the easiest one
-   to double-check by hand.
+
+2. **Run all five profiles (P1 through P5) in the Test the Controller tab.** Take a screenshot of the full breakdown for each one.
+
 
 3. **Compare P4 and P5.** Take a screenshot showing both of their final wash times side by side.
 
